@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="bg_controller_color">#33C9C4C4</color>
+    <color name="btn_color_activate">#F4C536</color>
+    <color name="btn_color_deactivate">#9E9E9E</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlackFortyPercentAlpha">#66000000</color>
+    <color name="colorBlackThirtyFivePercentAlpha">#59000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="crop_color">#00d1fe</color>
+    <color name="edge_color">#00d1fe</color>
+    <color name="green">#26d84c</color>
+    <color name="orange">#ff9c00</color>
+    <color name="red">#ff2600</color>
+    <color name="redDark">#D52406</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#D1C239</color>
+    <dimen name="fab_margin">16dp</dimen>
+    <string name="app_name">monocle</string>
+    <string name="title_activity_camera2">Camera2Activity</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="text_style_camera_controll_button">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
     <declare-styleable name="CameraBridgeViewBase">
        <attr format="boolean" name="show_fps"/>
        <attr format="integer" name="camera_id">
