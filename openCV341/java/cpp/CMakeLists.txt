@@ -10,6 +10,11 @@ cmake_minimum_required(VERSION 3.4.1)
 # You can define multiple libraries, and CMake builds them for you.
 # Gradle automatically packages shared libraries with your APK.
 
+include_directories(../../native/jni/include)
+add_library(lib_opencv SHARED IMPORTED)
+set_target_properties(lib_opencv PROPERTIES IMPORTED_LOCATION ${PROJECT_SOURCE_DIR}/../../native/libs/${ANDROID_ABI}/libopencv_java4.so)
+
+
 add_library( # Sets the name of the library.
         monocle-lib
 
@@ -39,6 +44,14 @@ find_library( # Sets the name of the path variable.
 target_link_libraries( # Specifies the target library.
         monocle-lib
 
+        lib_opencv
         # Links the target library to the log library
         # included in the NDK.
         ${log-lib})
+
+#target_link_libraries( # Specifies the target library.
+#        lib_opencv
+#
+#        # Links the target library to the log library
+#        # included in the NDK.
+#        ${log-lib} )
